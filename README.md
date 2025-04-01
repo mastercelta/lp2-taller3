@@ -2,6 +2,9 @@
 
 ![commits](https://badgen.net/github/commits/mastercelta/lp2-taller2?icon=github) 
 ![last_commit](https://img.shields.io/github/last-commit/mastercelta/lp2-taller2)
+![language](https://img.shields.io/badge/language-Python-blue.svg)
+![Python](https://img.shields.io/badge/Python-v3.10.12-blue.svg)
+![Flask](https://img.shields.io/badge/Flask-v2.3.2-blue.svg)
 
 ##  Autores
 - Juan Camilo Peñaloza [@mastercelta](https://www.github.com/mastercelta)
