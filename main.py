@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, url_for
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
@@ -49,19 +49,29 @@ def graficar(i, df):
     return lista
 
 
-@app.route("/")
-def index():
+def actualizar():
+    # Descargar los datos de las estaciones meteorológicas
+    nombres = []
     for i, url in enumerate(URLs):
-        nombres = []
         df = descargar(url)
         nombres.extend(graficar(i, df))
-        
-    # Descargar los datos de las estaciones meteorológicas
-    # Renderizar la plantilla index.html
+    return nombres
+
+
+@app.route("/")
+def index():
     return render_template("index.html", nombres=nombres)
+
+
+@app.route("/actualizar_datos")
+def actualizar_datos():
+    global nombres
+    nombres = actualizar()
+    return redirect("/")
 
 
 # Programa Principal
 if __name__ == "__main__":
     # Ejecuta la app
+    nombres = actualizar()
     app.run(host="0.0.0.0", debug=True)
