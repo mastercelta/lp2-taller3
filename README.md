@@ -1,7 +1,7 @@
 # Lenguaje de Programación 2 - Taller 3
 
-![commits](https://badgen.net/github/commits/mastercelta/lp2-taller2?icon=github) 
-![last_commit](https://img.shields.io/github/last-commit/mastercelta/lp2-taller2)
+![commits](https://badgen.net/github/commits/mastercelta/lp2-taller3?icon=github) 
+![last_commit](https://img.shields.io/github/last-commit/mastercelta/lp2-taller3)
 ![language](https://img.shields.io/badge/language-Python-blue.svg)
 ![Python](https://img.shields.io/badge/Python-v3.10.12-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-v2.3.2-blue.svg)
